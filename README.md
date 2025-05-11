@@ -49,7 +49,7 @@ This repository provides a step-by-step guide for setting up remote control of a
    - Configure GIMX to accept controller inputs over a network socket and relay them to the PS2.
 
 2. **Run the GIMX Input Server**:
-   - Start GIMX in server mode to listen for inputs from the laptop in Japan.
+   - Start GIMX in server mode to listen for inputs from the laptop.
    - Ensure that the PS2 responds to the relayed inputs locally.
 
 ---
