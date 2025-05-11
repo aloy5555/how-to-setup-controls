@@ -1,6 +1,6 @@
-# Remote PS2 Control with PS4 Controller (Without Streaming)
+# Remote PS2 Control with PS4 Controller
 
-This repository provides a step-by-step guide for setting up remote control of a PlayStation 2 (PS2) located in one country using a PS4 controller connected to a laptop in another country. The setup involves:
+This repository provides a step-by-step guide for setting up remote control of a PlayStation 2 (PS2) using a PS4 controller connected to a laptop. The setup involves:
 - Relaying PS4 controller inputs over the internet to the PS2.
 - Using a hardware and software relay system to enable remote control.
 
@@ -17,8 +17,8 @@ This repository provides a step-by-step guide for setting up remote control of a
 ### Hardware:
 - **PlayStation 2 console** (PS2 Fat or Slim).
 - **8BitDo Retro Receiver** (for connecting the PS4 controller to the PS2).
-- **Computer in America** (to act as the server for relaying inputs).
-- **Laptop in Japan** (to send controller inputs).
+- **Computer** (to act as the server for relaying inputs).
+- **Laptop** (to send controller inputs).
 
 ### Software:
 - **GIMX**: For relaying controller inputs over the network.
@@ -27,15 +27,7 @@ This repository provides a step-by-step guide for setting up remote control of a
 
 ### Network:
 - Stable internet connections on both ends.
-- Ability to configure **port forwarding** on the American router.
-
----
-
-## Repository Contents
-This repository includes:
-- `setup/`: Configuration files for GIMX.
-- `scripts/`: Scripts for automating input relay.
-- `docs/`: Step-by-step guides and troubleshooting tips.
+- Ability to configure **port forwarding** on the router.
 
 ---
 
@@ -50,7 +42,7 @@ This repository includes:
 
 ---
 
-### 2. Configure the Computer in America
+### 2. Configure the Computer
 1. **Install GIMX**:
    - Download and install **GIMX** on the computer.
    - Connect a **PS2-to-USB adapter** or use the Retro Receiver as a passthrough.
@@ -62,16 +54,16 @@ This repository includes:
 
 ---
 
-### 3. Configure the Laptop in Japan
+### 3. Configure the Laptop
 1. **Connect the PS4 Controller**:
    - Pair the PS4 controller to the laptop via Bluetooth or USB.
 2. **Send Controller Inputs**:
-   - Use software like **Parsec** or **Moonlight** to connect to the American server and send controller inputs over the network.
+   - Use software like **Parsec** or **Moonlight** to connect to the server and send controller inputs over the network.
 
 ---
 
 ### 4. Test the Remote Setup
-- Use the PS4 controller on your laptop in Japan to control the PS2 in America.
+- Use the PS4 controller on your laptop to control the PS2.
 - Verify that all inputs are being correctly relayed to the PS2.
 
 ---
@@ -80,11 +72,6 @@ This repository includes:
 - **Latency Issues**: Use wired internet connections and a low-latency input relay protocol.
 - **Controller Not Responding**: Ensure GIMX is running, and the Retro Receiver is paired correctly.
 - **Input Relay Fails**: Check port forwarding and firewall settings on the American router.
-
----
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
 
